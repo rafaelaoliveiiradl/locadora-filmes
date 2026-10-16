@@ -1,8 +1,8 @@
-# 🎬 CineMax Locadora — Sistema de Gerenciamento de Locadora de Filmes
+#  CineMax Locadora — Sistema de Gerenciamento de Locadora de Filmes
 
 Projeto Livre de Programação Orientada a Objetos em Java: um sistema de terminal para gerenciar o acervo, os clientes, os aluguéis, as devoluções e a cobrança de uma locadora de filmes.
 
-## 👥 Integrantes
+##  Integrantes
 
 | Integrante | Função / Parte responsável |
 |---|---|
@@ -13,7 +13,7 @@ Projeto Livre de Programação Orientada a Objetos em Java: um sistema de termin
 
 > Ajustem os nomes e as funções de acordo com o que cada um realmente fez.
 
-## 📌 Descrição do problema
+##  Descrição do problema
 
 Pequenas locadoras ainda controlam os aluguéis em caderno ou planilhas. Isso causa problemas como:
 
@@ -27,7 +27,7 @@ Este sistema resolve esses problemas controlando o **acervo (filmes e cópias)**
 
 **Possíveis usuários:** atendentes (registram aluguéis e devoluções), gerente/dono da locadora (consulta relatórios, comissões e indicadores) e administradores do acervo (cadastram filmes e cópias).
 
-## ✅ Funcionalidades
+##  Funcionalidades
 
 | Operação obrigatória | Onde está no sistema |
 |---|---|
@@ -62,7 +62,7 @@ Envolve as classes `Cliente`, `Filme`/`Copia`, `Funcionario`, `Aluguel` e `Pagam
 | Ranking de clientes, de filmes e de funcionários (comissão) | **Ranking** |
 | Taxa de atraso nas devoluções e taxa de ocupação do acervo | **Indicador da equipe** |
 
-## 🧱 Principais classes
+##  Principais classes
 
 ```
 src/main/java/com/locadora
@@ -94,7 +94,7 @@ Aluguel ──► Cliente, Copia (→ Filme), Funcionario     Pagamento ──�
 - **Locadora**: concentra as listas e os processos (alugar, devolver, pagar, buscar, ordenar).
 - **Relatorios**: cálculos de total, média, maior/menor, ranking e indicadores.
 
-## 📏 Regras de negócio
+##  Regras de negócio
 
 | # | Regra |
 |---|---|
@@ -112,14 +112,14 @@ Aluguel ──► Cliente, Copia (→ Filme), Funcionario     Pagamento ──�
 
 Tudo isso está implementado nas classes de domínio (`Cliente.validarPodeAlugar`, `Aluguel.calcularMulta`, `Aluguel.renovar`, `Cliente.getPercentualDesconto`, `Funcionario.calcularComissao`...) e **não** no `Main`.
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 - **Java 17** (Programação Orientada a Objetos, `ArrayList`, `LocalDate`)
 - **Maven** (gerenciamento de dependências e build)
 - **CSV** — importação e exportação de dados *(tecnologia externa 1)*
 - **JUnit 5** — testes automatizados das regras de negócio *(tecnologia externa 2)*
 
-## ⚙️ Instruções para configuração
+##  Instruções para configuração
 
 Pré-requisitos: **JDK 17 ou superior** e **Maven 3.8+**.
 
@@ -135,7 +135,7 @@ git clone <url-do-repositorio>
 cd locadora-filmes
 ```
 
-## ▶️ Instruções para execução
+##  Instruções para execução
 
 Rodar os testes automatizados:
 
@@ -160,7 +160,7 @@ java -jar target/locadora-filmes-1.0.0.jar
 
 Ao iniciar, responda `s` em *"Carregar dados de exemplo?"* para já ter filmes, clientes, aluguéis atrasados e pagamentos pendentes para testar.
 
-## 💡 Exemplos de utilização
+##  Exemplos de utilização
 
 **1. Regra de bloqueio por pagamento pendente** (João devolveu um filme e ainda não pagou):
 
@@ -212,7 +212,7 @@ nome;cpf;dataNascimento;telefone
 
 Dica para a demonstração: nas datas de aluguel e devolução, informe uma data passada (`dd/MM/aaaa`) para simular atrasos.
 
-## 🤖 Utilização de IA
+##  Utilização de IA
 
 | Ferramenta | Objetivo | Resumo do uso | Revisão pelo Dev |
 |---|---|---|---|
